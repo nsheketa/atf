@@ -1,0 +1,274 @@
+.change {
+  background: #fff url("@{rootUrl}change/section-bg.png") no-repeat top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  .size(100%, 1486px);
+  padding-top: 164px;
+  padding-bottom: 30px;
+  z-index: 0;
+}
+
+.change__heading {
+  max-width: 540px;
+  z-index: 1;
+  line-height: 0.85;
+  margin-bottom: 83px;
+  letter-spacing: 1.3px;
+  span {
+    border-color: #fff;
+  }
+  .section-heading__scope {
+    top: -46px;
+  }
+  .section-heading__scope-right {
+    right: -32px;
+  }
+  .section-heading__scope-left {
+    left: -41px;
+  }
+}
+
+.change__subheading {
+  font-size: 24px;
+  letter-spacing: -1px;
+}
+
+.change__subtitle {
+  font-family: @exo;
+  font-size: 24px;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 86px;
+}
+
+.change-benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 62px;
+  max-width: 100%;
+  overflow: auto;
+  padding-top: 10px;
+  margin-top: -10px;
+}
+
+.change-benefits__item {
+  flex: 0 286px;
+  max-width: 286px;
+  .border-radius(15px);
+  background: #356799 -moz-linear-gradient(117deg, rgb(71, 132, 150) 0%, rgba(0, 0, 51, 0.67) 100%);
+  background: #356799 -webkit-linear-gradient(117deg, rgb(71, 132, 150) 0%, rgba(0, 0, 51, 0.67) 100%);
+  background: #356799 -ms-linear-gradient(117deg, rgb(71, 132, 150) 0%, rgba(0, 0, 51, 0.67) 100%);
+  background: #356799 linear-gradient(117deg, rgb(71, 132, 150) 0%, rgba(0, 0, 51, 0.67) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 74px;
+  margin-left: 24px;
+  margin-right: 24px;
+  .transition(0.6s all ease-in-out);
+  &:hover {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+    .change-benefits__item-icon {
+      fill: url(#goldGrad);
+      -webkit-filter: drop-shadow(0px 0px 14px rgba(255, 102, 101, 0.7));
+      filter: drop-shadow(0px 0px 14px rgba(255, 102, 101, 0.7));
+    }
+    .change-benefits__item-title {
+      color: #fff;
+    }
+  }
+}
+
+.change-benefits__item-img {
+  //height: 215px;
+  padding: 38px 28px 10px;
+  text-align: center;
+  height: 217px;
+  position: relative;
+
+}
+
+.change-benefits__item-icon {
+  fill: url(#blueGrad);
+  transition: 0.3s all ease;
+  font-size: 96px;
+  text-align: center;
+  margin-bottom: 36px;
+  -webkit-filter: drop-shadow(0px 0px 6px rgba(90, 181, 243, 0.2));
+  filter: drop-shadow(0px 0px 6px rgba(90, 181, 243, 0.2));
+
+  &.icon-shield {
+
+  }
+  &.icon-bars2 {
+    font-size: 84px;
+    margin-top: 7px;
+    margin-bottom: 45px;
+  }
+  &.icon-wrench {
+    font-size: 73px;
+    margin-bottom: 34px;
+    margin-top: 7px;
+  }
+  &.icon-money {
+    font-size: 84px;
+    margin-top: 11px;
+    margin-bottom: 41px;
+  }
+  &.icon-analytics {
+    font-size: 86px;
+  }
+}
+
+.change-benefits__item-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ff9933;
+  letter-spacing: -0.4px;
+  line-height: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 20px;
+  .transition(0.3s all ease);
+}
+
+.change-benefits__item-content {
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+  padding: 19px 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin: 0;
+  overflow: hidden;
+  height: 149px;
+  background: #356799 -moz-linear-gradient(117deg, rgb(116, 144, 163) 0%, rgba(245, 245, 247, 0.67) 100%);
+  background: #356799 -webkit-linear-gradient(117deg, rgb(116, 144, 163) 0%, rgba(245, 245, 247, 0.67) 100%);
+  background: #356799 -ms-linear-gradient(117deg, rgb(116, 144, 163) 0%, rgba(245, 245, 247, 0.67) 100%);
+  background: #356799 linear-gradient(117deg, rgb(116, 144, 163) 0%, rgba(245, 245, 247, 0.67) 100%);
+}
+
+@media screen and (max-width: 1024px) {
+  .change {
+    height: auto;
+    min-height: 1439px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .change {
+    height: auto;
+    min-height: 1850px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .change {
+    height: auto;
+    min-height: 1033px;
+    position: relative;
+    background: #fff url('@{rootUrl}change/section-bg-mob.png') no-repeat center;
+    background-size: cover;
+    padding-top: 79px;
+  }
+
+  .change__heading {
+    letter-spacing: 0.8px;
+    font-weight: 700;
+    margin-bottom: 44px;
+    .section-heading__scope {
+      display: none;
+    }
+  }
+
+  .change__subheading {
+    font-size: 20px;
+    letter-spacing: 0.3px;
+  }
+
+  .change__subtitle {
+    letter-spacing: 1.3px;
+    margin-bottom: 73px;
+  }
+
+  .change-benefits {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 62px;
+    padding-top: 50px;
+    margin-top: -50px;
+  }
+
+  .change-benefits__item {
+    -ms-flex: 0 231px;
+    -webkit-box-flex: 0;
+    flex: 0 231px;
+    z-index: 1;
+    margin: 0 10px 24px;
+    max-width: 231px;
+    &:hover {
+      -webkit-box-shadow: -6px -9px 50px 0px rgba(30, 45, 80, 0.67);
+      box-shadow: -6px -9px 50px 0px rgba(30, 45, 80, 0.67);
+      .change-benefits__item-icon {
+        -ms-filter: drop-shadow(5px 5px 20px rgba(255, 102, 101, 0.7));
+        filter: drop-shadow(5px 5px 20px rgba(255, 102, 101, 0.7));
+      }
+    }
+  }
+
+  .change-benefits__item-title {
+    font-size: 17px;
+    bottom: 23px;
+    line-height: 1.2;
+  }
+
+  .change-benefits__item-icon {
+    &.icon-shield {
+      font-size: 80px;
+      margin-top: 10px;
+    }
+    &.icon-bars2 {
+      font-size: 81px;
+      margin-top: 13px;
+    }
+    &.icon-wrench {
+      font-size: 65px;
+      margin-left: 11px;
+      margin-top: 22px;
+    }
+    &.icon-money {
+      font-size: 73px;
+      margin-top: 22px;
+    }
+    &.icon-analytics {
+      font-size: 78px;
+      margin-left: 7px;
+    }
+  }
+
+  .change-benefits__item-content {
+    display: none;
+  }
+}

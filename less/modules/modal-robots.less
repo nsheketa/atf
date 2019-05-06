@@ -1,0 +1,141 @@
+
+.modal-robots {
+  max-width: 1035px;
+  .modal__close {
+    color: @blackColor;
+    opacity: 0.7;
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}
+
+.about-robots {
+  -webkit-box-shadow: 0px 10px 33.5px 16.5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 33.5px 16.5px rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.about-robots__heading {
+  font-size: 40px;
+  font-family: @exo;
+  font-weight: 600;
+  color: #212121;
+  text-align: center;
+  background-color: #f7f7f7;
+  height: 175px;
+  padding-top: 74px;
+  letter-spacing: 0.2px;
+  span {
+    color: @redColor;
+  }
+}
+
+.about-robots__content-wrap {
+  padding: 57px 100px 54px 80px;
+  background-color: #fff;
+}
+
+.about-robots__subheading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #993333;
+  margin-bottom: 39px;
+}
+
+.about-robots__content {
+  color: @blackColor;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 22px;
+}
+
+.about-robots__img {
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-bottom: 63px;
+  margin-top: 48px;
+  margin-left: 64px;
+  img {
+    .size(677px, 509px);
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .modal-robots {
+    min-width: 1035px;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .modal-robots {
+    min-width: 800px;
+  }
+
+  .about-robots__img {
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .modal-robots {
+    .modal__close {
+      right: 4px;
+      top: 31px;
+    }
+  }
+
+  .about-robots {
+    margin-top: 25px;
+    margin-bottom: 65px;
+  }
+
+  .about-robots__heading {
+    font-size: 20px;
+    padding-top: 22px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    height: 67px;
+    margin-bottom: 0px;
+  }
+
+  .about-robots__subheading {
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    margin-bottom: 21px;
+  }
+
+  .about-robots__content-wrap {
+    padding: 26px 60px 54px 35px;
+  }
+
+  .about-robots__content {
+    font-size: 16px;
+    letter-spacing: 0.3px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .modal-robots {
+    width: 600px;
+    max-width: 600px;
+    min-width: 600px;
+  }
+
+  .header__logo-desc {
+    &.visible-mob {
+      display: inline-block;
+    }
+  }
+
+}

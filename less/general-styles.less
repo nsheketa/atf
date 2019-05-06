@@ -1,0 +1,114 @@
+#main {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.custom-select__option {
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+
+.slick__slider {
+  position: relative;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.slick-arrow {
+  .square(45px);
+  position: absolute;
+  top: 140px;
+  display: inline-block;
+  z-index: 10;
+  cursor: pointer;
+  &.slick-disabled {
+    opacity: 0.5;
+  }
+}
+
+.slick-prev {
+  background: transparent url('@{rootUrl}connect/left-arrow.svg') no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  left: -58px;
+}
+
+.slick-next {
+  background: transparent url('@{rootUrl}connect/right-arrow.svg') no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  right: -76px;
+}
+
+.slick__slider-dots {
+  position: absolute;
+  top: -113px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 592px;
+  li {
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: transparent;
+    font-family: @Roboto !important;
+    .square(36px);
+    background-color: #fff;
+    border: 7px solid #cc4613;
+    .border-radius(50%);
+    .transition(0.3s all ease);
+    &:nth-of-type(1) {
+      left: -8px
+    }
+    &:nth-of-type(2) {
+      left: 32.3%;
+    }
+    &:nth-of-type(3) {
+      left: 64.6%;
+    }
+    &:nth-of-type(4) {
+      right: -22px;
+    }
+    &.slick-active {
+      width: 56px;
+      height: 56px;
+      top: -12px;
+      line-height: 57px;
+      border: none;
+      color: #fff;
+      background-color: #ff9900;
+      -webkit-filter: drop-shadow(1px 1px 14px #ffcc99);
+      filter: drop-shadow(1px 1px 14px #ffcc99);
+    }
+    &.next {
+      background-color: #e19b7d;
+      -webkit-filter: drop-shadow(1px 1px 13px #ff6666);
+      filter: drop-shadow(1px 1px 13px #ff6666);
+    }
+  }
+}
+
+.custom-select__option--value::after {
+  background-image: none !important;
+  right: 9px !important;
+  top: 15px !important;
+  width: 0 !important;
+  height: 0 !important;
+  border-style: solid;
+  border-width: 6px 4.5px 0 4.5px;
+  border-color: #828384 transparent transparent transparent;
+  z-index: 11;
+}
+
+.custom-select__option--value::before {
+  background-color: transparent !important;
+}

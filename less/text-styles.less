@@ -1,0 +1,92 @@
+h1, .h1 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  font-family: @exo;
+  line-height: 1.2;
+}
+
+h2, .h2 {
+  font-size: 36px;
+  font-family: @exo;
+  text-transform: uppercase;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+}
+
+.section-heading__scopes {
+  position: relative;
+  &:before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: -30px;
+    border: 5px solid;
+    border-right: none;
+    .size(35px, 155px);
+    top: -33px;
+  }
+  &:after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    right: -30px;
+    border-left: none;
+    top: -33px;
+  }
+}
+
+.section-heading__scope {
+  display: inline-block;
+  .size(32px, 155px);
+  border: 5px solid;
+  top: -33px;
+}
+
+.section-heading__scope-left {
+  position: absolute;
+  left: -27px;
+  border-right: none;
+}
+
+.section-heading__scope-right {
+  position: absolute;
+  right: -42px;
+  border-left: none;
+}
+
+.section-heading__grad {
+  position: relative;
+  background: rgba(255, 204, 51, 1);
+  background: -moz-linear-gradient(left, rgba(255, 204, 51, 1) 0%, rgba(255, 102, 51, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 204, 51, 1)), color-stop(100%, rgba(255, 102, 51, 1)));
+  background: -webkit-linear-gradient(left, rgba(255, 204, 51, 1) 0%, rgba(255, 102, 51, 1) 100%);
+  background: -o-linear-gradient(left, rgba(255, 204, 51, 1) 0%, rgba(255, 102, 51, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(255, 204, 51, 1) 0%, rgba(255, 102, 51, 1) 100%);
+  background: linear-gradient(to right, rgba(255, 204, 51, 1) 0%, rgba(255, 102, 51, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc33', endColorstr='#ff6633', GradientType=1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+  .h1, h1 {
+    font-size: 35px;
+  }
+
+  .h2, h2 {
+    font-size: 33px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .h1, h1 {
+    font-size: 25px;
+  }
+
+  .h2, h2 {
+    font-size: 33px;
+  }
+}
